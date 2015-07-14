@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+<ui:composition template="/templates/interna.xhtml">
+	<ui:define name="titulo">
+    Suporte ao usuário
+	</ui:define>
+
+	<ui:define name="corpo">
+		<h:form id="formulario">
+			<h:messages />
+			<h:inputTextarea rows="20" cols="70" value="#{emailBean.mensagem}" 	id="mensagem" required="true" />
+			<h:commandButton action="#{emailBean.enviarEmail}" value="Enviar" />
+		</h:form>
+	</ui:define>
+ </ui:composition>
+</html>

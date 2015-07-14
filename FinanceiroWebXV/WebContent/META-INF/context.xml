@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+<!-- 	<Resource	name="jdbc/FinanceiroDB"  -->
+<!-- 				auth="Container"  -->
+<!-- 				type="javax.sql.DataSource" -->
+<!-- 				maxActive="100"  -->
+<!-- 				maxIdle="30"  -->
+<!-- 				maxWait="10000" -->
+<!-- 				username="root"  -->
+<!-- 				password="sisnema"  -->
+<!-- 				driverClassName="com.mysql.jdbc.Driver" -->
+<!-- 				url="jdbc:mysql://localhost:3306/agenda?autoReconnect=true"/> -->
+				
+<!-- 	<Resource	name="mail/Session"  -->
+<!-- 				auth="Container"  -->
+<!-- 				type="javax.mail.Session" -->
+<!-- 				mail.smtp.host="smtp.gmail.com" -->
+<!-- 				mail.smtp.port="465" -->
+<!-- 				mail.smtp.aut="true" -->
+<!-- 				mail.smtp.user="alunosisnema" -->
+<!-- 				mail.smtp.password="sisnema123" /> -->
+
+	<Resource	name="jdbc/FinanceiroDB" 
+				auth="Container" 
+				type="javax.sql.DataSource"
+				maxActive="100" 
+				maxIdle="30" 
+				maxWait="10000"
+				username="postgres" 
+				password="postgres123=" 
+				driverClassName="org.postgresql.Driver"
+				url="jdbc:postgresql://localhost:5432/bancotrabalho?autoReconnect=true"/>
+
+</Context>
